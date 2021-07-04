@@ -24,6 +24,8 @@ FirstFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 FirstFrame.BorderColor3 = Color3.fromRGB(85, 0, 255)
 FirstFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 FirstFrame.Size = UDim2.new(0, 596, 0, 151)
+FirstFrame.Active = true 
+FirstFrame.Draggable = true 
 
 Label.Name = "Label"
 Label.Parent = FirstFrame
@@ -56,7 +58,7 @@ Button1.TextSize = 14.000
 Button1.MouseButton1Down:connect(function()
 	do
 		game:GetService"RunService".RenderStepped:Connect(function()
-			fireclickdetector(game:GetService("Workspace")["Zednov's Tycoon Kit"].Tycoons["Hyago Clan"].PurchasedObjects.Mine.Clicker.ClickDetector)
+			fireclickdetector(game:GetService("Workspace")["Zednov's Tycoon Kit"].Tycoons.Akatsuke.PurchasedObjects.Mine.Clicker.ClickDetector)
 		end)
 	end
 end)
@@ -198,7 +200,7 @@ Button9.TextSize = 14.000
 Button9.MouseButton1Down:connect(function()
 	do
 		game:GetService"RunService".RenderStepped:Connect(function()
-			fireclickdetector(game:GetService("Workspace")["Zednov's Tycoon Kit"].Tycoons["Hyago Clan"].PurchasedObjects.Mine.Clicker.ClickDetector)
+			fireclickdetector(game:GetService("Workspace")["Zednov's Tycoon Kit"].Tycoons.Akatsuke.PurchasedObjects.Mine.Clicker.ClickDetector)
 		end)
 		do
 			game:GetService"RunService".RenderStepped:Connect(function()
